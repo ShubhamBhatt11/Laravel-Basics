@@ -85,20 +85,20 @@ class ProjectsController extends Controller
         return redirect('/projects');
     }
 
-//    public function show($id)
-//    {
-//        $project = Project::findOrFail($id);
-//        return view('project.show',compact('project'));
-//    }
+    public function show($id)
+    {
+        $project = Project::findOrFail($id);
+        return view('project.show',compact('project'));
+    }
 
 //    public function show(Project $project)           // Route Model Binding.
 //    {
 //        return view('project.show',compact('project'));
 //    }
 
-    public function show(){
-       $twitter = app('twitter');  // AUTO RESOLUTION
-       dd($twitter);
-    }
+//    public function show(){
+//       $twitter = app('twitter');  // AUTO RESOLUTION
+//       dd($twitter);
+//    }
 
 }
